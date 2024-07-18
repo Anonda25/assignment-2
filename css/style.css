@@ -18,6 +18,10 @@ body {
     margin: 50px auto;
     border: 2px solid red;
 }
+.hambar{
+    display: none;
+    color: #fff;
+}
 
 .btn-primary {
     background: rgb(230, 83, 60);
@@ -70,7 +74,7 @@ p {
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     gap: 17px;
 }
@@ -153,4 +157,40 @@ p {
     font-weight: 600;
     margin-bottom: 0px;
 
+}
+
+
+/* media query section */
+@media screen and (max-width:576px) {
+    .banner-img{
+        margin-top:50px;
+    }
+    .list-style{
+        display: none;
+    }
+    .hambar{
+        display: block;
+        font-size: 1.6rem;
+        font-weight: bold;
+        /* justify-items: center; */
+    }
+    .banner {
+        flex-direction: column;
+        justify-items: center;
+    }
+    .banner-video-2 {
+        position: absolute;
+        top: 640px;
+        right:9px;
+        padding: 9px;
+    }
+    .banner-video {
+        padding: 9px;
+        position: absolute;
+        bottom: 230px;
+        right: 180px;
+    }
+ 
+    
+    
 }
