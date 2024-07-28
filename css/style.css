@@ -59,7 +59,7 @@ p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     letter-spacing: 0.5px;
-
+    font-weight: 400;
 }
 
 /* navbar */
@@ -234,10 +234,12 @@ p {
     justify-items: center;
     align-items: flex-start;
 }
-.run-title{
+
+.run-title {
     margin-top: 10px;
-    line-height:  120%; 
+    line-height: 120%;
 }
+
 .run-description {
     margin-top: 5px;
     line-height: 24px;
@@ -256,26 +258,36 @@ p {
     padding: 10px 50px;
     margin-top: 40px;
 }
+
 /*  Bmi-section */
-.Bmi-section{
+.Bmi-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bml {
     text-align: left;
-    width: 671px;
-    height: 120px;
 }
-.Bmi-section h1{
- margin: 0px;
- font-size: 3rem;
+
+.Bmi-section h1 {
+    margin: 0px;
+    font-size: 3rem;
 }
-.Bmi-section p{
- margin-top: 10px;
- font-size: 1rem;
+
+.Bmi-section p {
+    margin-top: 10px;
+    font-size: 1rem;
 }
-.calculator{
+
+.calculator {
     background: rgb(34, 34, 34);
     padding: 10px;
     display: flex;
     justify-content: space-between;
 }
+
 /* table */
 table {
     color: #6a6969;
@@ -285,15 +297,60 @@ table {
 
 td,
 th {
-  border:1px solid #a2a2a2;
+    border: 1px solid #a2a2a2;
     padding: 4px;
 }
-th{
+
+th {
     color: #fff;
 }
-.bmi-title{
+
+.bmi-title {
     font-size: 3rem;
 }
+
+
+
+
+.bmi-description {
+    margin: 0px 10px 30px 10px;
+    font-size: 1rem;
+}
+
+.input-style {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: -10px;
+}
+
+.input-styles {
+    display: grid;
+    margin: 10px;
+}
+
+input,
+select {
+    border: none;
+    padding: 10px 20px 10px 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.cal-btn {
+    margin: 10px;
+    padding: 10px 50px;
+}
+
+
+
+
+
+
+
+
 /* media query section */
 @media screen and (max-width:576px) {
     .banner-img {
@@ -317,7 +374,8 @@ th{
 
     .banner,
     .habits-img,
-    .run-section {
+    .run-section,
+    .calculator {
         flex-direction: column;
         justify-items: center;
 
@@ -368,7 +426,7 @@ th{
     .run-title {
         font-size: 3rem;
         margin-bottom: 20px;
-      
+
     }
 
     .run-description {
@@ -376,9 +434,28 @@ th{
         line-height: 24px;
     }
 
-    .btn-styles{
-        padding:10px 100px ;
+    .btn-styles {
+        padding: 10px 100px;
         margin-left: 65px;
     }
-    
+
+    /* bmi-section */
+    /* .Bmi-section {
+        width: 376px;
+        height: 140px;
+    } */
+    .bmi-title {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    input,
+    select {
+        border: none;
+        padding: 8px 2px;
+        border-radius: 8px;
+    }
+
+
+
 }
