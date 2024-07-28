@@ -59,7 +59,7 @@ p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     letter-spacing: 0.5px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 /* navbar */
@@ -295,15 +295,16 @@ p {
 }
 
 /* table */
-.bmi-table{
+.bmi-table {
     margin-top: 50px;
     margin-left: 14px;
 }
+
 table {
     color: #6a6969;
     border: 1px solid #6a6969;
     border-collapse: collapse;
-   
+
 }
 
 td,
@@ -346,9 +347,7 @@ th {
 .bnb {
     width: 577px;
     height: 386px;
-    /* border: 2px solid red; */
 }
-
 input,
 select {
     border: none;
@@ -357,19 +356,69 @@ select {
     background: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.6);
 }
-
-/* input{
-
-} */
-
 .cal-btn {
     margin: 10px;
     padding: 10px 50px;
 }
 
+/* content-section */
+
+.content-secton {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content-secton h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.content-bg-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 
 
+.content-bg-img {
+    border-radius: 18px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
 
+.content-image img {
+    width: 100%;
+    height: 272px;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2),;
+}
+
+.content-image {
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+   
+   
+}
+.titles  p{
+    margin-left: 0px;
+}
+.tainer{
+    position: absolute;
+    bottom: 5px;
+    left: 15%;
+    color: #b3b2b2;
+    font-weight: 500;
+    transform: translate(-50%, -50%);
+}
 
 
 
@@ -403,6 +452,10 @@ select {
         flex-direction: column;
         justify-items: center;
 
+    }
+    .content-bg-img{
+        grid-template-columns: 1fr;
+        gap: 3px;
     }
 
     .banner-video-2 {
@@ -464,9 +517,10 @@ select {
     }
 
     /* bmi-section */
-    .bmi-table{
+    .bmi-table {
         margin: 20px 10px 40px;
     }
+
     .bmi-title {
         font-size: 1rem;
         margin-bottom: 10px;
@@ -476,13 +530,18 @@ select {
         width: 354px;
         height: 395px;
     }
-    .input-style{
+
+    .input-style {
         margin: 0px;
     }
+
     .input-style {
-        display: grid;
-        grid-template-columns: 160px 160px ;
+        grid-template-columns: 160px 160px;
         gap: 10px;
+    }
+    /* content-secton */
+    .content-secton h1{
+        font-size: 2rem;
     }
 
 
