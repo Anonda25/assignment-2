@@ -225,6 +225,7 @@ p {
     background: rgb(34, 34, 34);
     padding: 40px;
     gap: 50px;
+    align-items: center;
 }
 
 .run-content {
@@ -238,7 +239,7 @@ p {
     line-height:  120%; 
 }
 .run-description {
-    margin-top: 10px;
+    margin-top: 5px;
     line-height: 24px;
 }
 
@@ -246,6 +247,9 @@ p {
 .run-images img {
     width: 100%;
     border-radius: 10px;
+    height: 312px;
+    object-fit: none;
+    object-position: 66% 33%;
 }
 
 .btn-styles {
@@ -364,6 +368,7 @@ th{
     .run-title {
         font-size: 3rem;
         margin-bottom: 20px;
+      
     }
 
     .run-description {
@@ -373,11 +378,7 @@ th{
 
     .btn-styles{
         padding:10px 100px ;
+        margin-left: 65px;
     }
-    .run-content {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
+    
 }
