@@ -16,9 +16,10 @@ body {
 .container {
     width: 90%;
     margin: 50px auto;
-    /* border: 2px solid rgb(255, 4, 4); */
+    border: 2px solid rgb(255, 4, 4);
 }
-.hambar{
+
+.hambar {
     display: none;
     color: #fff;
 }
@@ -58,7 +59,7 @@ p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     letter-spacing: 0.5px;
-   
+
 }
 
 /* navbar */
@@ -96,6 +97,10 @@ p {
 .banner-btn {
     margin-top: 44px;
 }
+
+/* .test{
+    padding: 10px;
+} */
 
 .banner-video {
     padding: 20px;
@@ -141,8 +146,8 @@ p {
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
     top: 120px;
-    right:-60px;
-    
+    right: -60px;
+
 }
 
 .banner-video-2 p {
@@ -159,83 +164,220 @@ p {
 
 }
 
+.banner-img img {
+    width: 100%;
+}
+
 /* habits-img */
-.habits-img{
+.habits-img {
     display: flex;
     justify-content: space-around;
 }
-.habits-title{
+
+.habits-title {
     font-size: 3rem;
     text-align: center;
     font-weight: 700;
     margin: 0px;
 
 }
-.habits-description{
+
+.habits-description {
     font-size: 1rem;
     font-weight: 500;
     margin-top: 50px;
     text-align: center;
     margin-bottom: 50px;
 }
-.img-style{
+
+.img-style {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+
 }
-.img-style h1{
-  font-size: 1rem;
-  text-align: center;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+.img-style h1 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.img-style p{
-  text-align: center;
-  margin-top: 0px;
-  font-size: 0.9rem;
+
+.img-style p {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 0.9rem;
 }
-.img-style img{
+
+.img-style img {
     border-radius: 50%;
 }
 
+/* run-section  */
+.run-section {
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-between;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 40px;
+    gap: 50px;
+}
 
+.run-content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+}
+.run-title{
+    margin-top: 10px;
+    line-height:  120%; 
+}
+.run-description {
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+
+.run-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-styles {
+    padding: 10px 50px;
+    margin-top: 40px;
+}
+/*  Bmi-section */
+.Bmi-section{
+    text-align: left;
+    width: 671px;
+    height: 120px;
+}
+.Bmi-section h1{
+ margin: 0px;
+ font-size: 3rem;
+}
+.Bmi-section p{
+ margin-top: 10px;
+ font-size: 1rem;
+}
+.calculator{
+    background: rgb(34, 34, 34);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+/* table */
+table {
+    color: #6a6969;
+    border: 1px solid rgb(104, 104, 104);
+    border-collapse: collapse;
+}
+
+td,
+th {
+  border:1px solid #a2a2a2;
+    padding: 4px;
+}
+th{
+    color: #fff;
+}
+.bmi-title{
+    font-size: 3rem;
+}
 /* media query section */
 @media screen and (max-width:576px) {
-    .banner-img{
-        margin-top:50px;
+    .banner-img {
+        margin-top: 50px;
     }
-    .list-style{
+
+    .banner-text-h1 {
+        font-size: 2rem;
+    }
+
+    .list-style {
         display: none;
     }
-    .hambar{
+
+    .hambar {
         display: block;
         font-size: 1.6rem;
         font-weight: bold;
         /* justify-items: center; */
     }
-    .banner,.habits-img {
+
+    .banner,
+    .habits-img,
+    .run-section {
         flex-direction: column;
         justify-items: center;
-       
+
     }
+
     .banner-video-2 {
         position: absolute;
-        top: 640px;
-        right:9px;
+        top: 680px;
+        right: 40px;
         padding: 9px;
+        font-size: .95px;
     }
+
+    .banner-video-2 p,
+    .banner-video p {
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+
+    .media-test {
+        margin-top: 30px;
+    }
+
     .banner-video {
         padding: 9px;
         position: absolute;
-        bottom: 230px;
-        right: 180px;
+        bottom: 240px;
+        right: 190px;
     }
-    .img-style{
-       margin-top: 40px;
+
+    .img-style {
+        margin-top: 40px;
     }
-    
-    
+
+    /* habits section */
+    .habits-title {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .habits-description {
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    /* run- section */
+    .run-title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .run-description {
+        margin-top: 10px;
+        line-height: 24px;
+    }
+
+    .btn-styles{
+        padding:10px 100px ;
+    }
+    .run-content {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
 }
