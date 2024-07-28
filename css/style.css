@@ -16,9 +16,11 @@ body {
 .container {
     width: 90%;
     margin: 50px auto;
-    border: 2px solid rgb(255, 4, 4);
+    /* border: 2px solid red; */
 }
-
+.font-family{
+    /* font-family: "MonteCarlo", cursive; */
+}
 .hambar {
     display: none;
     color: #fff;
@@ -67,7 +69,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: #000; */
 }
 
 .list-style {
@@ -97,11 +98,6 @@ p {
 .banner-btn {
     margin-top: 44px;
 }
-
-/* .test{
-    padding: 10px;
-} */
-
 .banner-video {
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -280,26 +276,20 @@ p {
     margin-top: 10px;
     font-size: 1rem;
 }
-
 /* calcluator */
-
-
 .calculator {
     background: rgb(34, 34, 34);
     padding: 20px;
 }
-
 .calcukator-containt {
     display: flex;
     justify-content: space-around;
 }
-
 /* table */
 .bmi-table {
     margin-top: 50px;
     margin-left: 14px;
 }
-
 table {
     color: #6a6969;
     border: 1px solid #6a6969;
@@ -323,12 +313,8 @@ th {
     margin: 10px;
 }
 
-
-
-
 .bmi-description {
     margin: 0px 10px 30px 10px;
-    font-size: 1rem;
 }
 
 .input-style {
@@ -379,7 +365,6 @@ select {
     gap: 20px;
 }
 
-
 .content-bg-img {
     border-radius: 18px;
     padding: 20px;
@@ -419,8 +404,32 @@ select {
     font-weight: 500;
     transform: translate(-50%, -50%);
 }
+/* footer */
+footer{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer h1{
+font-size: 2rem;
+margin: 10px 0px;
+}
+.footer-description{
+margin-top: 20px;
+}
 
-
+.footer-title{
+display: flex;
+flex-direction: column;
+gap: 20px;    
+}
+.footer-end{
+    text-align: center;
+    margin-top: 50px;
+}
 
 
 /* media query section */
@@ -448,7 +457,7 @@ select {
     .habits-img,
     .run-section,
     .calculator,
-    .calcukator-containt {
+    .calcukator-containt, .footer {
         flex-direction: column;
         justify-items: center;
 
@@ -512,7 +521,7 @@ select {
     }
 
     .btn-styles {
-        padding: 10px 100px;
+        padding: 10px 90px;
         margin-left: 65px;
     }
 
