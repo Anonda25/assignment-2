@@ -17,6 +17,7 @@ body {
 .container {
     width: 90%;
     margin: 50px auto;
+    /* border: 2px solid red; */
 }
 
 .font-family {
@@ -59,7 +60,6 @@ button {
 h1 {
     color: white;
     font-size: 4rem;
-    margin: 50px 0;
 }
 
 p {
@@ -360,6 +360,53 @@ select {
     padding: 10px 50px;
 }
 
+/* health-content */
+.health-section{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+
+}
+.health-content{
+    text-align: center;
+    padding: 20px;
+}
+.health-title{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.helath-picture{
+    background: #fffdfd0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow:  0 25px 30px 2px rgb(0 0 0 / 0.25);
+}
+.helath-picture img{
+    width: 90%;
+    height: 300px;
+}
+/* .helath-picture :hover{
+  background: #9c86f3;
+  border-radius: 10px;
+} */
+.image-title{
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgba(222, 222, 231, 0.912);
+    margin-bottom: 5px;
+}
+.health-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
 /* content-section */
 
 .content-secton {
@@ -484,7 +531,7 @@ footer {
 
     }
 
-    .content-bg-img {
+    .content-bg-img, .health-img {
         grid-template-columns: 1fr;
         gap: 3px;
     }
