@@ -593,6 +593,10 @@ footer {
         padding: 10px 90px;
         margin-left: 65px;
     }
+    .health-title{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
 
     /* bmi-section */
     .bmi-table {
