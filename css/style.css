@@ -590,8 +590,9 @@ footer {
     }
 
     .btn-styles {
-        padding: 10px 90px;
-        margin-left: 65px;
+        /* padding: 10px; */
+        margin-left: 50px;
+        padding: 0px auto;
     }
     .health-title{
         font-size: 2rem;
