@@ -327,18 +327,20 @@ th {
     margin: 0px 10px 30px 10px;
 }
 
+
 .input-style {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 10px;
-    margin-bottom: -10px;
+    width: 100%;
 }
 
 .input-styles {
     display: grid;
-    margin: 10px;
-
+    margin-top: -10px;
+    width: 100%;
+    padding: 10px;
 }
 
 .bnb {
@@ -353,6 +355,8 @@ select {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.6);
+    border-right: 15px solid transparent;
+
 }
 
 .cal-btn {
