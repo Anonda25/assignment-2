@@ -364,6 +364,127 @@ select {
     padding: 10px 50px;
 }
 
+/* Trainings section */
+#extra-section {
+    margin-top: 50px;
+}
+
+#row-1 {
+    display: grid;
+    grid-template-columns: 0.75fr 1fr 0.75fr;
+}
+
+#row-2 {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr 1fr;
+}
+
+#item-1 {
+    background: linear-gradient(0deg, rgba(6, 255, 210, 0.5) 0%, rgba(6, 255, 210, 0.5)100%), url('/images/exercise1.jpg');
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    position: relative;
+}
+
+#item-2 {
+    background: linear-gradient(0deg, rgba(255, 0, 0, .3) 0%, rgba(255, 0, 0, .3) 100%), url('/images/exercise2.png');
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    position: relative;
+}
+
+#item-3 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('/images/exercise3.png');
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+#item-4 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('/images/exercise4.png');
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#item-5 {
+    background: linear-gradient(0deg, rgba(66, 255, 0, 0.3) 0%, rgba(66, 255, 0, 0.3) 100%), url('/images/exercise5.jpg');
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#item-6 {
+    background: linear-gradient(0deg, rgba(0, 71, 255, 0.3) 0%, rgba(0, 71, 255, 0.3) 100%), url('/images/exercise6.jpg');
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#item-1 p {
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+#item-2 p {
+    color: rgba(255, 255, 255, 0.728);
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+#item-3 p {
+    color: rgba(255, 255, 255, 0.746);
+    font-weight: bold;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+#item-4 p {
+    color: rgba(255, 255, 255, 0.746);
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#item-5 p {
+    color: rgba(255, 255, 255, 0.746);
+    font-weight: bold;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+#item-6 p {
+    color: rgba(255, 255, 255, 0.746);
+    font-weight: bold;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
 /* health-content */
 .health-section {
     border-radius: 10px;
@@ -688,7 +809,60 @@ footer {
         grid-template-columns: 160px 160px;
         gap: 10px;
     }
+/* extra-section */
+.tr-style {
+    font-size: 2rem;
+}
 
+#row-1,
+#row-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#row-2 {
+    grid-template-columns: 0.75fr 1fr;
+    width: 100%;
+    overscroll-behavior-y: 0;
+}
+
+#item-2 {
+    height: 100%;
+    background-size: 230%;
+    background-position: calc(100% - 30%);
+}
+
+#item-4 {
+    height: 100%;
+    background-size: 190%;
+}
+
+#item-1,
+#item-5 {
+    height: 100px;
+
+}
+
+#item-2 p {
+    font-size: 10px;
+}
+
+#item-1 p {
+    font-size: 10px;
+}
+
+#item-4 p {
+    font-size: 10px;
+}
+
+#item-5 p {
+    font-size: 10px;
+}
+
+
+#item-3,
+#item-6 {
+    display: none;
+}
     /* content-secton */
     .content-secton h1 {
         font-size: 2rem;
