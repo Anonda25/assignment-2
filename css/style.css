@@ -17,13 +17,12 @@ body {
 .container {
     width: 90%;
     margin: 50px auto;
-    /* border: 2px solid red; */
 }
 
 .font-family {
 
     font-family: 'Miama', sans-serif;
-    font-weight: 300;
+    font-size: 7rem;
     font-weight: 200;
 }
 
@@ -59,9 +58,14 @@ button {
 
 h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
+    line-height: 70px;
+    margin-bottom: 20px;
 }
-
+h2{
+    color: #fff;
+    font-size: 2rem;
+}
 p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
@@ -99,7 +103,9 @@ p {
     align-items: center;
     position: relative;
 }
-
+.banner-title{
+    font-size: 5rem;
+}
 .banner-btn {
     margin-top: 44px;
 }
@@ -724,13 +730,12 @@ footer {
         padding: 9px;
         position: absolute;
         bottom: 240px;
-        right: 190px;
     }
 
     .banner-video-2 {
         position: absolute;
-        top: 535px;
-        right: 40px;
+        top: 480px;
+        right:50px;
         padding: 9px;
         font-size: .95px;
     }
