@@ -429,53 +429,100 @@ select {
     margin: 20px;
 }
 
+
 .content-bg-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-}
-
-.content-bg-img {
     border-radius: 18px;
-    padding: 20px;
     background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    
 }
 
-.content-image img {
-    width: 100%;
-    height: 272px;
-    border-radius: 18px;
-    background: rgba(0, 0, 0, 0.2), ;
-}
-
-.content-image {
-    position: relative;
+.titles {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
 }
 
 .title {
-    position: absolute;
-    bottom: 20px;
-    left: 20%;
-    color: #fff;
-    font-size: 28px;
-    font-weight: bold;
-    transform: translate(-50%, -50%);
-
-
+    font-size: 1rem;
 }
 
-.titles p {
-    margin-left: 0px;
+
+.img-style-1 {
+    background: #545050;
+    background: url('/images/trainer1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    opacity: 0.9;
+}
+.img-style-2 {
+    background: #545050;
+    background: url('/images/trainer2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 18px;
+    position: relative;
+    opacity: 0.9;
+}
+.img-style-3{
+    background: #545050;
+    background: url('/images/trainer3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    opacity: 0.9;
+}
+.img-style-4{
+    background: #545050;
+    background: url('/images/trainer4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    opacity: 0.9;
+}
+.img-style-5{
+    background: #545050;
+    background: url('/images/trainer5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    opacity: 0.9;
+}
+.img-style-6
+{
+    background: #545050;
+    background: url('/images/trainer6.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    opacity: 0.9;
 }
 
-.tainer {
-    position: absolute;
-    bottom: 5px;
-    left: 15%;
-    color: #b3b2b2;
-    font-weight: 500;
-    transform: translate(-50%, -50%);
-}
+
+
+
 
 /* footer */
 footer {
@@ -544,7 +591,7 @@ footer {
     .content-bg-img,
     .health-img {
         grid-template-columns: 1fr;
-        gap: 3px;
+        gap: 20px;
     }
 
     .image-section,
